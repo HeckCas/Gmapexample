@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSIg</title>
+    <!-- Mandamos a llamar a la hoja de estilos, solo para que el mapa tenga el ancho completo de la pagina -->
+
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Aqui iniciamos las variables necesarias para que al llamar al archivo de javascript las lea -->
+    <script>
+        var map, markers = [], infowindow;
+    </script>
+    <script src="gmaps.js"></script>
+</head>
+
+<body>
+
+<!-- Aqui creamos el mapa y lo mandamos a llamar con el API de google maps con la llave que creamos anteriormente -->
+
+    <div id="map">
+    </div>
+
+    <!-- El boton de toggle markers nos permitira ocultar el marcador cuando reciba el evento de dar click en boton -->
+    <button id="ocultar" onclick="toggleMarkers()">Mostrar/Ocultar markers</button>
+    <!-- AIzaSyCE4SdkOdt_MfyTKSM1g6T3mtqJfE2ZQDw es nuestra API KEY que google nos dio -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4SdkOdt_MfyTKSM1g6T3mtqJfE2ZQDw&callback=initMap" async
+        defer></script>
+</body>
+</html>
