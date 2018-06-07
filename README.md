@@ -1,2 +1,2 @@
-# Gmapsex
+# Gmapexample
 Examples using gmaps api
